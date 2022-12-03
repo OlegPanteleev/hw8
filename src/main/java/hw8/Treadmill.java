@@ -2,16 +2,22 @@ package hw8;
 
 public class Treadmill implements Barrier{
 
-    protected String name;
-    protected int distance;
+    //protected String name;
+    private final int lenght;
 
-    public Treadmill(String name, int distance) {
-        this.name = name;
-        this.distance = distance;
+    public Treadmill(int lenght) {
+        this.lenght = lenght;
+    }
+
+
+    @Override
+    public int getLenght() {
+        return lenght;
     }
 
     @Override
-    public void distance() {
-        System.out.printf("Препятствие %s имеет длинну %d м.\n", name, distance);
+    public int getHeight() {
+        return 0;
     }
+
 }

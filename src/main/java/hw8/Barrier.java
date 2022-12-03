@@ -2,5 +2,15 @@ package hw8;
 
 public interface Barrier {
 
-    void distance();
+    /**
+     * Длинна препятствия
+     * @return
+     */
+    int getLenght();
+
+    /**
+     * Высота препятствия
+     * @return
+     */
+    int getHeight();
 }
